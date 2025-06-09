@@ -17,7 +17,7 @@ class AuthPage:
 
     def enter_password(self, password):
         wait = WebDriverWait(self.driver, 10)
-        wait.until(EC.presence_of_element_located(self.password)).send_keys(password)
+        wait.until(EC.presence_of_element_located(self.enter_password)).send_keys(password)
 
     def click_next_btn(self):
         wait = WebDriverWait(self.driver, 10)
